@@ -26,3 +26,10 @@ def exibir_entradas():
 
 if __name__ == '__main__':
     exibir_entradas()
+
+
+
+
+
+
+

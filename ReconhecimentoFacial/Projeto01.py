@@ -56,7 +56,7 @@ def reconhecer():
             ledAM.write(1)
             y1, x2, y2, x1 = faceloc[-1]
             w, h = x2 - x1, y2 - y1
-            cvzone. cornerRect(img,(x1,y1,w,h), colorR=(255,0,0))
+            cvzone.cornerRect(img,(x1,y1,w,h), colorR=(255,0,0))
             cvzone.putTextRect(img,'Analisando ...',(50,50), colorR=(255,0,0))
 
         if len(faceloc)>20:
@@ -72,6 +72,7 @@ def reconhecer():
                 time.sleep(2)
                 rotateServo(0)
                 ledVD.write(0)
+
                 break
             else:
                 cvzone.putTextRect(img, 'Acesso Negado', (50, 50), colorR=(0, 0, 255))
